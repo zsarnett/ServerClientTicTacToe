@@ -36,7 +36,8 @@ To run the Client executable:
   ```
    $ ./client [IP_Address]
   ```
-  * Where [IP_Address] is the IP Address of the Server Device on the Network
+  * Where [IP_Address] is the IP Address of the Server Device on the Network. You can get this by runn ifconfig on linux machines
+    * You will use the inet address or IPv4 address
   
 ### Playing
 
