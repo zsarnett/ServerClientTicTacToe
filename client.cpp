@@ -14,6 +14,12 @@ int main(int argc, char *argv[])
 
     int sockfd;
 
+    if (argc != 2)
+    {
+        printf("Please use correct arguements when running client: ./client [IP_Address]\n");
+        return 0;
+    }
+
     if ((sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     {
         Error("Error Opening Socket");

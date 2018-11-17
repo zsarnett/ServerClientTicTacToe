@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 
     if ((sockfd = socket(AF_INET, SOCK_STREAM, 0)) < 0)
     {
-        Error("ERROR: Opening Socket");
+        Error("ERROR Opening Socket");
     }
     printf("Socket Created\n");
 
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 
     if (bind(sockfd, (struct sockaddr *)&servAddr, sizeof(servAddr)) < 0)
     {
-        Error("ERROR: Binding");
+        Error("ERROR Binding");
     }
     printf("Binding Complete\n");
 
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
     {
         if ((new_socket = accept(sockfd, (struct sockaddr *)&clientAddr, &clientLen)) < 0)
         {
-            Error("ERROR: Accepting");
+            Error("ERROR Accepting");
         }
 
         printf("Accepted Connection from: %s\n", inet_ntoa(clientAddr.sin_addr));
@@ -49,7 +49,7 @@ int main(int argc, char *argv[])
 
         if (pid < 0)
         {
-            Error("ERROR: Forking");
+            Error("ERROR Forking");
         }
         if (pid == 0)
         {
