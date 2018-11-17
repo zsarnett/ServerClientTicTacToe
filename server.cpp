@@ -76,7 +76,7 @@ void StartTicTacToe(int sock)
         T.input1 = ReadMessage(sock);
         T.input2 = ReadMessage(sock);
         T.ggrid[T.input1][T.input2] = 'U';
-        printf("Move Received from Player: %d %d", T.input1, T.input2);
+        printf("Move Received from Player: %d %d\n", T.input1, T.input2);
 
         gameover = T.CheckWinnings();
         SendMessage(gameover, sock);
@@ -90,7 +90,7 @@ void StartTicTacToe(int sock)
 
         SendMessage(T.input1, sock);
         SendMessage(T.input2, sock);
-        printf("Move Sent to Player: %d %d", T.input1, T.input2);
+        printf("Move Sent to Player: %d %d\n", T.input1, T.input2);
 
         gameover = T.CheckWinnings();
         SendMessage(gameover, sock);
