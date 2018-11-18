@@ -513,14 +513,14 @@ void TicTacToe::PlayByUser()
 // Prints Game Board
 void TicTacToe::PrintGameGrid()
 {
-    cout << "  0 1 2" << endl;
+    printf("  0 1 2\n");
     for (int i = 0; i < 3; i++)
     {
-        cout << i << " ";
+        printf("%d ", i);
         for (int j = 0; j < 3; j++)
         {
-            cout << ggrid[i][j] << " ";
+            printf("%c ", ggrid[i][j]);
         }
-        cout << endl;
+        printf("\n");
     }
 }
