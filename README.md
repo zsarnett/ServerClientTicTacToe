@@ -51,6 +51,6 @@ Example Move:
 Which cell would you like to mark (row and column)? 1 1
 ```
 
-The Client will ask `Which cell would you like to mark (row and column)?` and the appopriate input is two numbers with a space between them. No Spaces before or after. Ex. `1 1`
+The Client will ask `Which cell would you like to mark (row and column)?` and the appropriate input is two numbers with a space between them. No Spaces before or after. Ex. `1 1`
 
 The Server will then respond with a move and the board will be updated.
