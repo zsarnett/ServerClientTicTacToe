@@ -81,6 +81,6 @@ void StartTicTacToe(int sock)
 
         gameover = ProcessWinnings(ReadMessage(sock));
     }
-    printf("Final Game Baord:\n");
+    printf("Final Game Board:\n");
     T.PrintGameGrid();
 }
