@@ -36,7 +36,7 @@ To run the Client executable:
   ```
    $ ./client [IP_Address]
   ```
-  * Where [IP_Address] is the IP Address of the Server Device on the Network. You can get this by runn ifconfig on linux machines
+  * Where [IP_Address] is the IP Address of the Server Device on the Network. You can get this by running ifconfig on linux machines
     * You will use the inet address or IPv4 address
   
 ### Playing
@@ -51,6 +51,6 @@ Example Move:
 Which cell would you like to mark (row and column)? 1 1
 ```
 
-The Client will ask `Which cell would you like to mark (row and column)?` and the appopriate input is two numbers with a space between them. No Spaces before or after. Ex. `1 1`
+The Client will ask `Which cell would you like to mark (row and column)?` and the appropriate input is two numbers with a space between them. No Spaces before or after. Ex. `1 1`
 
 The Server will then respond with a move and the board will be updated.
