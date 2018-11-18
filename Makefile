@@ -2,7 +2,6 @@ CXX = g++
 CXXFLAGS = -Wall -g
 
 HEADERS = TicTacToe.h clientserverhelper.h
-CLIENTSOURCES = TicTacToe.cpp clientserverhelper.cpp client.cpp
 CLIENTOBJECTS = client.o TicTacToe.o clientserverhelper.o
 SERVEROBJECTS = server.o TicTacToe.o clientserverhelper.o
 
