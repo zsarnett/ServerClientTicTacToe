@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
 
     if (argc != 2)
     {
-        printf("Please use correct arguments when running client: ./client [IP_Address]\n");
+        printf("Please use correct arguements when running client: ./client [IP_Address]\n");
         return 0;
     }
 
@@ -81,6 +81,6 @@ void StartTicTacToe(int sock)
 
         gameover = ProcessWinnings(ReadMessage(sock));
     }
-    printf("Final Game Board:\n");
+    printf("Final Game Baord:\n");
     T.PrintGameGrid();
 }

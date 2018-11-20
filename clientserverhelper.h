@@ -6,7 +6,7 @@ int ProcessWinnings(int winresult);
 void SendMessage(int message, int sock);
 void Error(const char *message);
 
-int PORT = 8084;
+int PORT = 8090;
 int gameover = 0;
 
 #endif

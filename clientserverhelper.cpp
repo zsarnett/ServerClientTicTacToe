@@ -2,7 +2,8 @@
 
 using namespace std;
 
-char buffer[256] = {0};
+int output;
+int readSize = 1;
 
 // Parameter: Message to print
 // No Return Value
@@ -18,7 +19,7 @@ void Error(const char *message)
 // Sends Message to Socket
 void SendMessage(int message, int sock)
 {
-    if (write(sock, to_string(message).c_str(), strlen(to_string(message).c_str())) < 0)
+    if (write(sock, &message, sizeof(int)) < 0)
     {
         Error("ERROR writing to socket");
     }
@@ -29,12 +30,12 @@ void SendMessage(int message, int sock)
 // Reads Message from socket
 int ReadMessage(int sock)
 {
-    if (read(sock, buffer, 1) < 0)
+    if (read(sock, &output, sizeof(int)) < 0)
     {
         Error("ERROR reading from Socket");
     }
 
-    return *buffer - '0';
+    return output;
 }
 
 // Parameter: Win Result
