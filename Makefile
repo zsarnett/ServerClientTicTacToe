@@ -11,7 +11,7 @@ BINARIES = client server
 all: $(BINARIES)
 
 clean:
-	-rm -f $(BINARIES) $(CLIENTOBJECTS) core
+	-rm -f $(BINARIES) $(CLIENTOBJECTS) $(SERVEROBJECTS) core
 
 client: $(CLIENTOBJECTS)
 	$(CXX) $(CXXFLAGS) -o $@ $^
